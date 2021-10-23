@@ -4,11 +4,12 @@
   "description": "Client for the Bricklink API",
   "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saenglert/bricklink_api_client.git"
+    "url": "https://github.com/saenglert/bricklink_api_client.git"
   },
   "keywords": [
     "bricklink",
