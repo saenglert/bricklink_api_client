@@ -1,0 +1,28 @@
+{
+  "name": "bricklink_api_client",
+  "version": "1.0.0",
+  "description": "Client for the Bricklink API",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saenglert/bricklink_api_client.git"
+  },
+  "keywords": [
+    "bricklink",
+    "api",
+    "lego",
+    "brick"
+  ],
+  "author": "Sascha Englert <hello@englerts.de>",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/saenglert/bricklink_api_client/issues"
+  },
+  "homepage": "https://github.com/saenglert/bricklink_api_client#readme",
+  "devDependencies": {
+    "typescript": "^4.4.4"
+  }
+}
