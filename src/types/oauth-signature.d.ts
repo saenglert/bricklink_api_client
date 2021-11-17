@@ -1,7 +1,7 @@
 declare module 'oauth-signature' {
     
     function generateSignature (
-        method: 'GET' | 'POST' | 'PUT' | 'DELETE',
+        method: string,
         url: string,
         parameters: {
             oauth_consumer_key : string,

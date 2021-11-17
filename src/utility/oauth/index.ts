@@ -40,7 +40,7 @@ export class OAuth {
         this.tokenSecret = tokenSecret;
     }
 
-    public getAuthHeaders(method: 'GET' | 'POST' | 'PUT' | 'DELETE', url: string ) {
+    public getAuthHeaders(method: string, url: string ) {
         const timestamp = unix().toString();
         const nonce = randomValueHex(16);
         const params = {
