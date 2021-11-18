@@ -1,5 +1,5 @@
-import { Timestamp } from "..";
-import { PaymentStatus } from "../../enums/PaymentStatus";
+import { Timestamp } from ".";
+import { PaymentStatus } from "../enums/PaymentStatus";
 
 export interface Payment {
     /** The payment method for this order */

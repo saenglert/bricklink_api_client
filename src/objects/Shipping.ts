@@ -1,5 +1,5 @@
-import { Timestamp } from "..";
-import { Address } from "../address";
+import { Timestamp } from ".";
+import { Address } from "./Address";
 
 /**
  * Information about the shipment of an order

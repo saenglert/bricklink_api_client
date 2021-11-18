@@ -1,8 +1,8 @@
-import { Timestamp } from "..";
-import { Cost } from "../cost";
-import { DispCost } from "../dispcost";
-import { Payment } from "../payment";
-import { Shipping } from "../shipping";
+import { Timestamp } from ".";
+import { Cost } from "./Cost";
+import { DispCost } from "./DispCost";
+import { Payment } from "./Payment";
+import { Shipping } from "./Shipping";
 
 
 export type OrderStatus = "Pending" | "Updated" | "Processing" | "Ready" | "Paid" | "Shipped" | "Received" | "Completed" | "QCR" | "NPB" | "NPX" | "NRS" | "NSS" | "Cancelled";

@@ -1,4 +1,4 @@
-import { Name } from "../name";
+import { Name } from "./Name";
 
 /** The object representation of the shipping address */
 export interface Address {
