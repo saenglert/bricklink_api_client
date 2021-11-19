@@ -14,10 +14,10 @@ export type OAuthHeaders = {
 };
 
 /** 
- * Auth parameters for a request which
+ * Auth headers for a request which
  * are static across multiple requests
  */
-export type StaticAuthParameters = {
+export type StaticAuthHeaders = {
     'oauth_consumer_key': string,
     'oauth_token': string,
     'oauth_signature_method': string,
@@ -25,12 +25,12 @@ export type StaticAuthParameters = {
 };
 
 export class OAuth {
-    staticParams: StaticAuthParameters
+    staticHeaders: StaticAuthHeaders
     consumerSecret: string;
     tokenSecret: string;
 
     constructor(consumerKey: string, consumerSecret: string, token: string, tokenSecret: string) {
-        this.staticParams = {
+        this.staticHeaders = {
             'oauth_consumer_key': consumerKey,
             'oauth_token': token,
             'oauth_signature_method': OAUTH_SIGNATURE_METHOD,
@@ -44,7 +44,7 @@ export class OAuth {
         const timestamp = unix().toString();
         const nonce = randomValueHex(16);
         const params = {
-            ...this.staticParams,
+            ...this.staticHeaders,
             'oauth_timestamp': timestamp,
             'oauth_nonce': nonce,
         }
